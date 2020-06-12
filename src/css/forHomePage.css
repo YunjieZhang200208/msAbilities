@@ -1,13 +1,11 @@
 #wrapper1{
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 50px
 }
 
 @media only screen and (max-width: 940px) {
     #wrapper1 {
         padding-left: 0px;
         padding-right: 0px;
-        padding-top: 50px
     }
 }

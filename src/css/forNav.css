@@ -11,12 +11,10 @@
     padding: .92857143em 0.74285714em;
 }
 
-/* .ui.menu .item img{
-    height: 70px; 
-    width: 70px!important; 
-    position: relative; 
-    top: 10px
-} */
+.ui.menu .item img{
+    width: 100px!important; 
+    position: relative
+}
 
 @media only screen and (max-width: 940px) {
     #topNav {

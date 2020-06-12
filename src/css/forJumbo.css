@@ -3,17 +3,16 @@
     width: 100%;
     background-image: url("../assets/pics/jumboBackground.jpg");
     background-size: cover;
-    padding-top: 60px;
+    padding-top: 100px;
 }
 
 #logoWrapper{
-    width: 250px;
+    width: 350px;
     margin: auto
 }
 
 #logoWrapper > img{
-    height: 250px;
-    width: 250px;
+    width: 300px;
 }
 
 #jumboWrapper > h1{
