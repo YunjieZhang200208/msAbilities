@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import { Menu, Dropdown } from 'semantic-ui-react'
-import logo from '../assets/logo.png'
+import logo from '../assets/pics/logo.png'
 import "../css/forNav.css"
 import { Icon } from 'semantic-ui-react'
 import HomePage from '../pages/HomePage'
@@ -23,67 +23,56 @@ import OutreachAndEngagementPage from '../pages/humanPractices/OurtreachAndEngag
 
 
 class Nav extends React.Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {}
-    }
-
-
-    handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
     render() {
-        const { activeItem } = this.state
-
         return (
             <BrowserRouter>
                 <Menu stackable borderless id="topNav">
                     <Menu.Item to="/" as={Link}>
-                        <img src={logo} />
+                        <img src={logo}/>
                     </Menu.Item>
 
-                    <Menu.Item name='features' active={activeItem === 'features'} onClick={this.handleItemClick} to="/" as={Link}>
+                    <Menu.Item name='features' to="/" as={Link}>
                         Home
                     </Menu.Item>
 
                     <Dropdown item text='Projects'>
                         <Dropdown.Menu>
-                            <Dropdown.Item name='description' active={activeItem === 'description'} onClick={this.handleItemClick} to="/Description" as={Link}>Description</Dropdown.Item>
-                            <Dropdown.Item name='modelling' active={activeItem === 'modelling'} onClick={this.handleItemClick} to="/Modelling" as={Link}>Modelling</Dropdown.Item>
-                            <Dropdown.Item name='design' active={activeItem === 'design'} onClick={this.handleItemClick} to="/Design" as={Link}>Design</Dropdown.Item>
-                            <Dropdown.Item name='safety' active={activeItem === 'safety'} onClick={this.handleItemClick} to="/Safety" as={Link}>Safety</Dropdown.Item>
-                            <Dropdown.Item name='labBook' active={activeItem === 'labBook'} onClick={this.handleItemClick} to="/Lab-Book" as={Link}>Lab Book</Dropdown.Item>
-                            <Dropdown.Item name='demonstration' active={activeItem === 'demonstration'} onClick={this.handleItemClick} to="/Demonstration" as={Link}>Demonstration</Dropdown.Item>
-                            <Dropdown.Item name='results' active={activeItem === 'results'} onClick={this.handleItemClick} to="/Results" as={Link}>Results</Dropdown.Item>
+                            <Dropdown.Item name='description' to="/Description" as={Link}>Description</Dropdown.Item>
+                            <Dropdown.Item name='modelling' to="/Modelling" as={Link}>Modelling</Dropdown.Item>
+                            <Dropdown.Item name='design' to="/Design" as={Link}>Design</Dropdown.Item>
+                            <Dropdown.Item name='safety' to="/Safety" as={Link}>Safety</Dropdown.Item>
+                            <Dropdown.Item name='labBook' to="/Lab-Book" as={Link}>Lab Book</Dropdown.Item>
+                            <Dropdown.Item name='demonstration' to="/Demonstration" as={Link}>Demonstration</Dropdown.Item>
+                            <Dropdown.Item name='results' to="/Results" as={Link}>Results</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
 
                     <Dropdown item text='People'>
                         <Dropdown.Menu>
-                            <Dropdown.Item name='team' active={activeItem === 'description'} onClick={this.handleItemClick} to="/Team" as={Link}>Team</Dropdown.Item>
-                            <Dropdown.Item name='attribution' active={activeItem === 'protocols'} onClick={this.handleItemClick} to="/Attribution" as={Link}>Attribution</Dropdown.Item>
+                            <Dropdown.Item name='team' to="/Team" as={Link}>Team</Dropdown.Item>
+                            <Dropdown.Item name='attribution' to="/Attribution" as={Link}>Attribution</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
 
                     <Dropdown item text='Parts'>
                         <Dropdown.Menu>
-                            <Dropdown.Item name='partsOverview' active={activeItem === 'partsOverview'} onClick={this.handleItemClick} to="/Parts-Overview" as={Link}>Parts Overview</Dropdown.Item>
-                            <Dropdown.Item name='basicParts' active={activeItem === 'basicParts'} onClick={this.handleItemClick} to="/Basic-Parts" as={Link}>Basic Parts</Dropdown.Item>
+                            <Dropdown.Item name='partsOverview' to="/Parts-Overview" as={Link}>Parts Overview</Dropdown.Item>
+                            <Dropdown.Item name='basicParts' to="/Basic-Parts" as={Link}>Basic Parts</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
 
                     <Dropdown item text='Human Practices'>
                         <Dropdown.Menu>
-                            <Dropdown.Item name='humanPractices' active={activeItem === 'humanPractices'} onClick={this.handleItemClick} to="/Human-Practices" as={Link}>Human Practices</Dropdown.Item>
-                            <Dropdown.Item name='outreachAndEngagement' active={activeItem === 'outreachAndEngagement'} onClick={this.handleItemClick} to="/Outreach-and-Engagement" as={Link}>Outreach and Engagement</Dropdown.Item>
+                            <Dropdown.Item name='humanPractices' to="/Human-Practices" as={Link}>Human Practices</Dropdown.Item>
+                            <Dropdown.Item name='outreachAndEngagement' to="/Outreach-and-Engagement" as={Link}>Outreach and Engagement</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
 
-                    <Menu.Item name='medalsAndAwards' active={activeItem === 'medalsAndAwards'} onClick={this.handleItemClick} to="/Medals-and-Awards" as={Link}>
+                    <Menu.Item name='medalsAndAwards' to="/Medals-and-Awards" as={Link}>
                         Medals and Awards
                     </Menu.Item>
 
-                    <Menu.Item name='collaborations' active={activeItem === 'sign-in'} onClick={this.handleItemClick} position='right' to="/Collaborations" as={Link}>
+                    <Menu.Item name='collaborations' position='right' to="/Collaborations" as={Link}>
                         <Icon name="handshake" size="large" />
                         Collaborations
                     </Menu.Item>

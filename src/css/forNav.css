@@ -3,12 +3,20 @@
     box-shadow: none;
     border-radius: 0px;
     padding-left: 5%;
-    padding-right: 5%
+    padding-right: 5%;
+    margin: 0px;
 }
 
 .ui.menu .item{
     padding: .92857143em 0.74285714em;
 }
+
+/* .ui.menu .item img{
+    height: 70px; 
+    width: 70px!important; 
+    position: relative; 
+    top: 10px
+} */
 
 @media only screen and (max-width: 940px) {
     #topNav {
