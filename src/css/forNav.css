@@ -22,3 +22,11 @@
         padding-right: 0px
     }
 }
+
+#topNav>.item {
+    font-size: 24px;
+}
+
+#topNav>.item>img {
+    width: 140px!important;
+}

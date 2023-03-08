@@ -1,27 +1,54 @@
 #jumboWrapper{
-    height: 520px;
+    height: 70vh;
     width: 100%;
-    background-image: url("../assets/pics/jumboBackground.jpg");
     background-size: cover;
-    padding-top: 100px;
+    padding-top: 20vh;
 }
 
 #logoWrapper{
-    width: 350px;
-    margin: auto
+    width: 1200px;
+    margin: auto;
+    transition: width 2s;
 }
 
-#logoWrapper > img{
-    width: 300px;
+#logoWrapper > h1 {
+    font-size: 100px;
+    font-weight: bolder;
+    text-align: center;
 }
 
 #jumboWrapper > h1{
     margin: 0 0 8px;
-    color: #fff;
+    color: #a1a1a1;
     text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0 24px;
-    font-size: 46px;
+    font-size: 60px;
     line-height: 56px;
     font-weight: 100;
     letter-spacing: -.01em;
+}
+
+#abilities{
+    color: #008847;
+    transition: font-size 2s;
+}
+
+#needs {
+    transform: rotate(10deg);
+    position: relative;
+    left: 200px;
+    top: -16px;
+    color: red;
+    /* transition: font-size 2s; */
+}
+
+#crossLine {
+    position: relative;
+    top: -94px;
+    left: 650px;
+    transform: rotate(22.21deg);
+    width: 300px;
+    height: 8px;
+    background-color: black;
 }

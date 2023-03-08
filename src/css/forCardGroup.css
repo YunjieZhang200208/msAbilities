@@ -1,0 +1,24 @@
+.ratingCard {
+    margin:auto!important;
+    width: 100%!important;
+    box-shadow: none!important;
+    background-color: transparent!important;
+}
+
+#ratingGrid {
+    padding: 10px!important;
+    margin-bottom: 5rem;
+    background-color: #edf8e9;
+}
+
+.ui.card>.extra, .ui.cards>.card>.extra {
+    border-top: 0px!important;
+}
+
+.ui.grid {
+    margin: 0px!important;
+}
+
+.four.wide.column {
+    padding: 0px!important;
+}
